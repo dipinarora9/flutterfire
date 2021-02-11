@@ -12,7 +12,7 @@ Exception convertPlatformException(Object exception) {
     throw exception;
   }
 
-  return platformExceptionToFirebaseException(exception as PlatformException);
+  return platformExceptionToFirebaseException(exception);
 }
 
 /// Converts a [PlatformException] into a [FirebaseException].
