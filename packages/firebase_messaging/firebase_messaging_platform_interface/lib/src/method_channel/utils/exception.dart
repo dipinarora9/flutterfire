@@ -22,6 +22,7 @@ Exception convertPlatformException(Object exception) {
 /// which can be converted into user friendly exceptions.
 FirebaseException platformExceptionToFirebaseException(
     PlatformException platformException) {
+  print(platformException.details);
   Map<String, String> details = platformException.details != null
       ? Map<String, String>.from(platformException.details)
       : null;
